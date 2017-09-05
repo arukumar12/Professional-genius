@@ -16,4 +16,4 @@ if(n=0)
 {
 printf("The given number is zero);
 }
-}
+       }
