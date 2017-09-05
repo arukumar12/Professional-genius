@@ -1,19 +1,16 @@
 #include<stdio.h>
 void main()
 {
-char a[4]={'a','e','i','o','u'};
-char b;
+char dy;
+int i;
 printf("Enter the character");
-scanf("%c",b);
-for(int i=0;i<4;i++)
+scanf("%c",&dy);
+if((dy=='a')||(dy=='e')||(dy=='i')||(dy=='o')||(dy=='u')||(dy=='A')||(dy=='E')||(dy=='I')||(dy=='O')||(dy=='U'))
 {
-if(a[i]==b)
-{
-printf("The given character is a vowel");
+    printf("The given character is a vowel");
 }
 else
 {
-printf("The given character is a consonanat");
-}
+    printf("The given character is a consonant");
 }
 }
