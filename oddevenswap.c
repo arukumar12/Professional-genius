@@ -10,10 +10,10 @@ int main(void)
     {
     	if(str[i]!='\0')
     	{
-    		int temp;
-    		temp=str[i];
+    		int t;
+    		t=str[i];
     		str[i]=str[i+1];
-    		str[i+1]=temp;
+    		str[i+1]=t;
     	}
     }
     printf("%s",str);
