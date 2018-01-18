@@ -1,52 +1,24 @@
-#include <stdio.h>
-#include <conio.h>
-#include <string.h>
-void main() 
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+void main()
 {
-
-
-char a[10],b[10];
-	
-int i,j,k;
-	
-printf("Enter the two strings:");
-	
-scanf("%s%s",a,b);
-	
-i=strlen(a);
-	
-j=strlen(b);
-k=strcmp(a,b);
-
-if(!k)
-	
+char a[100],b[100];
+int i=0,j,len1,len2,tot;
+clrscr();
+scanf("%s %s",a,b);
+len1=strlen(a);
+len2=strlen(b);
+tot=len1+len2;
+for(i=len1;i<tot;)
 {
-
-printf("%s %s",a,b);
-	
+for(j=0;j<len2;j++)
+{
+a[i]=b[j];
+i++;
 }
-	
-else
-	
-{
-		
-if(i>j)
-		
-{
-		
-printf("%s",a);
-		
 }
-		
-else
-		
-{
-			
-printf("%s",b);
-		
-}
-	
-}
+for(i=0;i<tot;i++)
+printf("%c",a[i]);
 getch();
-	
 }
