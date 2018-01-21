@@ -20,11 +20,11 @@ for(i=0;i<n;i++)
 }
 if(flag==1)
 {
-    printf("The given string contains the vowels");
+    printf("Yes");
 }
 else
 {
-    printf("The given string does not contain any vowels");
+    printf("No");
 }
 return 0;
 }
