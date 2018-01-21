@@ -10,7 +10,7 @@ int main(void)
     }
     else
     {
-        printf("The given number is not a multiple of 7");4
+        printf("The given number is not a multiple of 7");
     }
     return 0;
 }
