@@ -4,9 +4,9 @@ int main(void)
 {
 char a[100];
 printf("Enter the sentence:");
-gets(a);
+scanf("%[^\n]%*c",a);
 int k,i,c=1;
-for(i=0;i<k;i++)
+for(i=0;a[i]!='\0';i++)
 {
 if(a[i]==' ')
 c++;
