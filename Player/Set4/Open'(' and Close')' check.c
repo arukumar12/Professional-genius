@@ -3,31 +3,41 @@
 #include<string.h>
 void main()
 {
-char a[100];
-int o=0,c=0,i,l,d;
-clrscr();
-printf("Enter the string that contains only ')' and '(': ");
-scanf("%s",&a);
-l=strlen(a);
-for(i=0;i<l;i++)
-{
-if(a[i]=='(')
-{
-o++;
-}
-else if(a[i]==')')
-{
-c++;
-}
-}
-d=o-c;
-if(d==0)
-{
-printf("Yes");
-}
-else
-{
-printf("No");
-}
-getch();
+	int l,i,count=0;
+	char a[10];
+	printf("Enter the string (only '(' and ')'): ");
+	scanf("%s",&a);
+	l=strlen(a);
+	for(i=0;i<=l;i++)
+	{
+		if(count>=0)
+		{
+			if(a[0]==')')
+			{
+				printf("NO");
+				break;
+			}
+			if(a[i]=='(')
+			{
+				count+=1;
+			}
+			if(a[i]==')')
+			{
+				count-=1;
+			}
+		}
+		else
+		{
+			printf("NO");
+			break;
+		}
+	}
+	if((a[0]!=')')&&(count==0))
+	{
+		printf("YES");
+	}
+	else
+	{
+		printf("NO");
+	}
 }
