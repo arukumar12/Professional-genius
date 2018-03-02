@@ -1,19 +1,18 @@
-#include<stdio.h>
-#include<string.h>
-void main()
-{
-char a[100],b[100];
-int i,j,len1,len2;
-scanf("%s %s",a,b);
-len1=strlen(a);
-len2=strlen(b);
-if(len1>len2)
-{
-    printf("%s",a);
+#include <stdio.h>
+int main() {
+    int i,l,k;
+	char a[10];
+	char b[10];
+	scanf("%s%s",a,b);
+	l=strlen(a);
+	k=strlen(b);
+       if(l>k)
+	{
+	    printf("%s",a);
+	}
+	else
+	{
+	    printf("%s",b);
+	}
+	return 0;
 }
-else
-{
-    printf("%s",b);
-}
-}
-
